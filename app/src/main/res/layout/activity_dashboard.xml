@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/border"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imgProfile"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="NURUL TRI WAHYUNI"
+        android:textStyle="bold"
+
+        android:textSize="30sp"/>
+
+    <View
+        android:id="@+id/vGaris"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_below="@+id/tvUsername"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="4dp"
+        android:background="#2196F3"/>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/vGaris"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/uty1"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="5dp"/>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/vGaris"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/img1"
+        android:src="@drawable/uty1"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="5dp"/>
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/img1"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/uty1"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="5dp"/>
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/img2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/img1"
+        android:src="@drawable/uty1"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="5dp" />
+
+    <TextView
+        android:id="@+id/tvNimNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img3"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="5190311078 - NURUL TRI WAHYUNI"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
